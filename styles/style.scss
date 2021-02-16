@@ -10,6 +10,7 @@
 body{
    
     font-family: 'Manrope' 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: $DesaturatedDarkBlue;
 }
 
 .container{
@@ -58,7 +59,7 @@ body{
 
                 & p{
                     font-weight: $FontWeightedw;
-                    font-size: $Fontsize;
+                    font-size: 1rem;
                     line-height: 1.3;
                     margin-top: -2rem;
                 }
