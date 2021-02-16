@@ -1,46 +1,30 @@
-@import url('(https://fonts.google.com/specimen/Manrope');
-
 @import 'colors.scss';
+        @media screen and (max-width: 900px) {
+            .container{
+                width: $minWidthMobile;
+                display: grid;
+               
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: 3fr;
+                grid-gap: 1rem;
+                align-items: center;
+                justify-content: space-evenly;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-   
-    font-family: 'Manrope' 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: $LightGrayishBlue;
-}
+                & .left__section{
+                    width: 100%;
 
-.container{
-    width: $minWidthDesktop;
-    margin: 14rem auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    background-color: $white;
-    border-radius: 16px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+                    & img{
+                        width: 100%;
+                        margin-top: -9rem;
+                        border-top-right-radius: 8px;
+                        border-bottom-left-radius: 0;
+                    }
+                }
 
-    & .left__section{
-       z-index: 1;
-       
-        
-             
-            & img{
-                width: 100%;
-                border-top-left-radius: 8px;
-                border-bottom-left-radius: 8px;
-                height: 100%;
-            }
-        }
-             
-
-        & .right__section{
-            z-index: 2;
-            display: grid;
-            grid-template-rows:  220px  160px;
-            margin-left: 6rem;
+                   & .right__section{
+                     z-index: 2;
+                    margin: -2rem 1.8rem;
+          
           
 
             & .introduction{
@@ -50,8 +34,7 @@ body{
                 color: $VeryDarkGrayishBlue;
 
                 & h1{
-                    margin-bottom: 4rem;
-                    margin-top: 1.6rem;
+                 
                     font-weight: $FontWeightedw;
                     font-size: $Fontsize;
                     line-height: 1.3;
@@ -67,8 +50,11 @@ body{
         
 
             & .footer{
-              display: grid;
-              grid-template-columns: repeat(2, 1fr);
+              display: flex;
+              margin: 12.4rem auto;
+              margin-bottom: 0;
+              flex-direction: column;
+
 
                 & .michelle__section{
                     display: flex;
@@ -112,13 +98,13 @@ body{
                 }
               & .social__icons{
                 background-color: $VeryDarkGrayishBlue;
-                padding: 3rem;
+                padding: 2rem;
                 position: absolute;
-                top: -100px;
-                right: -17%;
-                width: 23rem;
+                top: 0;
+                right: -30%;
+                width: 15rem;
                 border-radius: 20px;
-                height: 6rem;
+                height: 4rem;
                 color: $white;
                 display: flex;
                 justify-content: end;
@@ -130,19 +116,17 @@ body{
                 & span{
                     color: $GrayishBlue;
                     font-size: $Fontsize;
-                    margin-right: 2.2rem;
-                    
+                    z-index: 5;
                 }
 
                 
-                   
                     & .socialzz{
-                    font-size: 2.5rem;
+                    font-size: 1rem;
                     margin-left: 0.6rem;
                     text-align: center;
                     text-decoration: none;
                     color: $white;
-                    cursor: pointer;
+
                 }
                 
 
@@ -150,13 +134,14 @@ body{
                     width: 3rem;
                     height: 3rem;
                     background-color: $VeryDarkGrayishBlue;
-                    z-index: 1;
+                    z-index: 5;
                     position: absolute;
-                    bottom: -18%;
-                    left: 45%;
+                    bottom: -24%;
+                    left: 30%;
                     border-bottom-left-radius: 61px;
                     border-bottom-right-radius: 19px;
                     transform: rotate(133deg);
+                    z-index: 1;
                 }
               }
       
@@ -172,16 +157,13 @@ body{
                     border-radius: 20px;
                     color: $white;
                     position: absolute;
-                    right: 24%;
-                    bottom: 40%;
+                    left: 70%;
+                    top: 100px;
+                    bottom: 0;
                     cursor: pointer;
                 }
             }
         }
 
-       
-
-
-    }
-
- @import 'mediaQueries';
+            }
+        }

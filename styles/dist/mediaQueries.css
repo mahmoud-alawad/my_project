@@ -1,0 +1,137 @@
+@media screen and (max-width: 900px) {
+  .container {
+    width: 375px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 3fr;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .container .left__section {
+    width: 100%;
+  }
+  .container .left__section img {
+    width: 100%;
+    margin-top: -9rem;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+  .container .right__section {
+    z-index: 2;
+    margin: -2rem 1.8rem;
+  }
+  .container .right__section .introduction {
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #48556a;
+  }
+  .container .right__section .introduction h1 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.3;
+  }
+  .container .right__section .introduction p {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-top: -2rem;
+  }
+  .container .right__section .footer {
+    display: flex;
+    margin: 12.4rem auto;
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+  .container .right__section .footer .michelle__section {
+    display: flex;
+    align-items: center;
+    padding: 0rem;
+  }
+  .container .right__section .footer .michelle__section img {
+    border-radius: 50%;
+    width: 100px;
+  }
+  .container .right__section .footer .michelle__section .title {
+    margin-left: 1rem;
+  }
+  .container .right__section .footer .michelle__section .title h4 {
+    margin-bottom: 0.4rem;
+    color: #48556a;
+    font-size: 22px;
+  }
+  .container .right__section .footer .michelle__section .title span {
+    color: #9eafc2;
+    margin-top: 1rem;
+    font-size: 22px;
+  }
+  .container .right__section .share__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    position: relative;
+  }
+  .container .right__section .share__section .share__screen {
+    opacity: 1 !important;
+  }
+  .container .right__section .share__section .social__icons {
+    background-color: #48556a;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    right: -30%;
+    width: 15rem;
+    border-radius: 20px;
+    height: 4rem;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+  .container .right__section .share__section .social__icons span {
+    color: #9eafc2;
+    font-size: 22px;
+    z-index: 5;
+  }
+  .container .right__section .share__section .social__icons .socialzz {
+    font-size: 1rem;
+    margin-left: 0.6rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  .container .right__section .share__section .social__icons .extention {
+    width: 3rem;
+    height: 3rem;
+    background-color: #48556a;
+    z-index: 5;
+    position: absolute;
+    bottom: -24%;
+    left: 30%;
+    border-bottom-left-radius: 61px;
+    border-bottom-right-radius: 19px;
+    transform: rotate(133deg);
+    z-index: 1;
+  }
+  .container .right__section .share__section .share__icon {
+    background-color: #9eafc2;
+    width: 2.5rem;
+    height: 2.6rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border-radius: 20px;
+    color: #fff;
+    position: absolute;
+    left: 70%;
+    top: 100px;
+    bottom: 0;
+    cursor: pointer;
+  }
+}
