@@ -10,7 +10,7 @@
 body{
    
     font-family: 'Manrope' 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-color: $DesaturatedDarkBlue;
+    background-color: $LightGrayishBlue;
 }
 
 .container{
@@ -169,7 +169,7 @@ body{
                     border-radius: 20px;
                     color: $white;
                     position: absolute;
-                    right: 20%;
+                    right: 24%;
                     bottom: 40%;
                     cursor: pointer;
                 }
